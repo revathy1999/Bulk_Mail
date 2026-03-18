@@ -1,12 +1,39 @@
-# React + Vite
+Bulk Mail Sender 📧
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application that allows users to send bulk emails by uploading an Excel file containing multiple email addresses. Users can compose a message, upload recipient data, and send emails to all recipients efficiently.
 
-Currently, two official plugins are available:
+Features 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Upload Excel file containing email addresses
 
-## Expanding the ESLint configuration
+Extract and validate email IDs automatically
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Compose custom subject and message
+
+Send bulk emails using Nodemailer
+
+Store email records in MongoDB
+
+Tech Stack 🛠️
+
+Frontend: React
+
+Backend: Node.js + Express
+
+Database: MongoDB
+
+Email Service: Nodemailer
+
+File Handling: XLSX
+
+How It Works 🔄
+
+Upload Excel file containing email addresses
+
+System reads emails from file
+
+User writes subject and message
+
+Emails are sent to all uploaded recipients
+
+Delivery status can be stored in database
